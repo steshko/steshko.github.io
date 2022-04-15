@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body{
+  font-family: "Patrick Hand", "Arial", sans-serif;
+  font-size: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a:default{
+  color: #000000;
+}
+
+a:link{
+  color: rgb(38, 102, 174);
+}
+a:hover{
+  color: rgb(220, 55, 50);
+}
+
+a:visited{
+  color: rgb(113, 100, 230);
+}
+
+h1{
+  text-align: center;
+  margin: 10px;
+  border-bottom: 1px solid #C0C0C0;
+}
+
+h2{
+  padding: 12px;
+}
+
+h2, h3{
+  margin: 0px;
+}
+
+img{
+  max-width: 200px;
+  max-height: auto;
+}
+
+ul{
+  margin-bottom: 0px;
+}
+
+table{
+  width: 500px;
+  border-spacing: 0;
+}
+
+tbody tr:nth-child(2n+1){
+  background-color: #F0F0F0;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 10px;
+
+  max-width: 1200px;
+  padding: 16px;
+}
+
+.table-row-title{
+  text-align: left;
+}
+
+.statistics-table{
+  text-align: center;
+}
+
+.power-table{
+  border-spacing: 10px;
+}
+
+.power-table th{
+  text-align: left;
+}
+
+#government-title{
+  background-color: #F0F0F0;
+}
+
+#row-three{
+  grid-column: 1/-1;
+  background-color: #F0F0F0;
+}
+
+#division-of-power{
+  grid-column: auto / span 2;
+  margin: 0 auto;
+}
+
+#statistics{
+  grid-column: auto/span 2;
+  margin: auto auto;
+}
