@@ -256,4 +256,11 @@ h3{
     width: 25%;
     margin-right: 0px;
   }
+  .nav-logo-link{
+    width: 25%;
+    margin-right: 0px;
+  }
+  #about-me-picture{
+    max-width: 100%;
+  }
 }
