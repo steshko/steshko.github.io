@@ -2,54 +2,181 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Resume</title>
-    <meta name="description" content="Resume about Daniel S.">
+    <title>Car Blog</title>
+    <meta name="description" content="Car Blog">
     <meta name="author" content="Daniel S.">
 
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
+
   <body>
-    <h1>Daniel S.</h1>
 
-    <h2>Education</h2>
-    <p>University of Maiami</p>
-    <p>Major: Finance</p>
-    <p>Minors: Business Law, Computer Science</p>
+    <header>
+      <img src="resources/carbloglogo.png" alt="Logo" class="nav-logo">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#latest-news">Latest News</a></li>
+          <li><a href="#car-picks">Car Picks</a></li>
+          <li><a href="about-me.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h2>Work Experience</h2>
-    <ol>
-      <li>Tutor</li>
-      <li>Archivist</li>
-      <li>Assistant to Manager at store</li>
-    </ol>
+    <main>
+      <h2 id="latest-news">Latest News</h2>
+      <div class="flexbox-container background-container">
+        <img src="resources/subaru-brz.jpg" alt="Subary BRZ" class="article-picture">
 
-    <h2>Hobbies</h2>
-    <table style="text-align:center">
-      <thead>
-        <tr>
-          <th>Hobby</th>
-          <th>First Started</th>
-          <th>Times done per week</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Table Tennis</td>
-          <td>2015</td>
-          <td>3-6</td>
-        </tr>
-        <tr>
-          <td>Pool (billiards)</td>
-          <td>2021</td>
-          <td>2-4</td>
-        </tr>
-        <tr>
-          <td>Debating</td>
-          <td>2000</td>
-          <td>7+</td>
-        </tr>
-      </tbody>
-    </table>
+        <div class="article-text-box">
+          <p class="article-text article-date">April 29th, 2022</p>
+          <h3 class="article-text article-title"><a href="articles/subaru-toyota.html" class="article-link">New Subary BRZ and Toyota GR86 Shortage</a></h3>
+          <p class="article-text">The next generation Subaru BRZ and its technical brother, the Toyota GR86 went on sale in Fall 2021 for the 2022 model year, yet 6 months there is still a shortage...</p>
+        </div>
+      </div>
 
+      <div class="flexbox-container background-container">
+        <img src="resources/bmw-2-series.jpg" alt="BMW 2 Series" class="article-picture">
+
+        <div class="article-text-box">
+          <p class="article-text article-date">April 15th, 2022</p>
+          <h3 class="article-text article-title"><a href="articles/bmw-missing-specs.html" class="article-link">BMW 2 series missing standard eqipment</a></h3>
+          <p class="article-text">If you have opened a BMW 2 series configurator recently and specced Vernessa leather seats you may have noticed the items added include “Passenger Lumbar Delete” and “Passenger Width Delete”...</p>
+        </div>
+      </div>
+
+      <h2 id="car-picks">Editor's Car Picks</h2>
+
+      <div class="flexbox-container-editor">
+        <div class="editor-picks-container" id="first-editor-pick">
+          <img src="resources/porsche-911.jpg" alt="Porsche 911" class="editor-picks-image">
+          <p class="background-container car-name">Porshce 911 Turbo S</p>
+
+          <div class="popup" id="first-popup">
+            <table class="spec-table">
+              <tbody>
+                <tr>
+                  <th>Starting Price</th>
+                  <td>$207,000</td>
+                </tr>
+                <tr>
+                  <th>Engine</th>
+                  <td>3.8L 6-Cylinder</td>
+                </tr>
+                <tr>
+                  <th>Transmition</th>
+                  <td>eight-speed dual clutch</td>
+                </tr>
+                <tr>
+                  <th>0-60 mph</th>
+                  <td>2.6 Seconds</td>
+                </tr>
+                <tr>
+                  <th>Top Speed</th>
+                  <td>198 mph</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+        <div class="editor-picks-container" id="second-editor-pick">
+          <img src="resources/bmw-m4.jpg" alt="BMW M3 Competition" class="editor-picks-image">
+          <p class="background-container car-name">BMW M3 Competition</p>
+
+          <div class="popup" id="second-popup">
+            <table class="spec-table">
+              <tbody>
+                <tr>
+                  <th>Starting Price</th>
+                  <td>$73,000</td>
+                </tr>
+                <tr>
+                  <th>Engine</th>
+                  <td>3.8L 6-Cylinder</td>
+                </tr>
+                <tr>
+                  <th>Transmition</th>
+                  <td>eight-speed automatic</td>
+                </tr>
+                <tr>
+                  <th>0-60 mph</th>
+                  <td>3.5 Seconds</td>
+                </tr>
+                <tr>
+                  <th>Top Speed</th>
+                  <td>182 mph</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="editor-picks-container" id="third-editor-pick">
+          <img src="resources/mercedes-sls.jpg" alt="Mercedes SLS" class="editor-picks-image">
+          <p class="background-container car-name">Mercedes SLS Roadster</p>
+
+          <div class="popup" id="third-popup">
+            <table class="spec-table">
+              <tbody>
+                <tr>
+                  <th>Starting Price</th>
+                  <td>$228,000</td>
+                </tr>
+                <tr>
+                  <th>Engine</th>
+                  <td>6.2L V8</td>
+                </tr>
+                <tr>
+                  <th>Transmition</th>
+                  <td>seven-speed automatic</td>
+                </tr>
+                <tr>
+                  <th>0-60 mph</th>
+                  <td>3.7 Seconds</td>
+                </tr>
+                <tr>
+                  <th>Top Speed</th>
+                  <td>199 mph</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <script type="text/javascript">
+      document.getElementById("first-editor-pick").onmouseenter = mouseEnterOne;
+      document.getElementById("first-editor-pick").onmouseleave = mouseLeaveOne;
+
+      function mouseEnterOne(){
+        document.getElementById("first-popup").style.display = "block";
+      }
+      function mouseLeaveOne(){
+        document.getElementById("first-popup").style.display = "none";
+      }
+
+      document.getElementById("second-editor-pick").onmouseenter = mouseEnterTwo;
+      document.getElementById("second-editor-pick").onmouseleave = mouseLeaveTwo;
+
+      function mouseEnterTwo(){
+        document.getElementById("second-popup").style.display = "block";
+      }
+      function mouseLeaveTwo(){
+        document.getElementById("second-popup").style.display = "none";
+      }
+
+      document.getElementById("third-editor-pick").onmouseenter = mouseEnterThree;
+      document.getElementById("third-editor-pick").onmouseleave = mouseLeaveThree;
+
+      function mouseEnterThree(){
+        document.getElementById("third-popup").style.display = "block";
+      }
+      function mouseLeaveThree(){
+        document.getElementById("third-popup").style.display = "none";
+      }
+    </script>
   </body>
-
-</html>
